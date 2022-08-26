@@ -1,0 +1,16 @@
+crud 기본
+<br/>
+<br/>
+<% @posts.each do |post| %>
+<strong>제목</strong>
+<br />
+<%=post.title%>
+<br />
+<strong>내용</strong>
+<br />
+<%=post.content%>
+<br />
+<hr />
+<% end %>
+<br/>
+<a href="/crud/write">글쓰러 가기</a>

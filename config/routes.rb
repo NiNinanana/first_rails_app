@@ -12,4 +12,8 @@ Rails.application.routes.draw do
   get "/calc/result" => "calc#result"
 
   get "/calc/plus/:num1/:num2" => "calc#plus"
+
+  get "/crud" => "crud#index"
+  get "/crud/write" => "crud#write"
+  post "/create" => "crud#create"
 end
