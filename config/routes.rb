@@ -16,4 +16,8 @@ Rails.application.routes.draw do
   get "/crud" => "crud#index"
   get "/crud/write" => "crud#write"
   post "/create" => "crud#create"
+  
+  get "/crud/modify/:post_id" => "crud#modify"
+  post "/update/:post_id" => "crud#update"
+  get "/delete/:post_id" => "crud#delete"
 end
